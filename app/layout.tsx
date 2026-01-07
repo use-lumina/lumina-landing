@@ -13,20 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lumina - Lightweight Observability for LLM Applications",
-  description: "Track costs, latency, and quality across your AI systems with minimal overhead. OpenTelemetry-compatible observability platform built for production LLM applications.",
-  keywords: ["LLM", "observability", "AI monitoring", "cost tracking", "latency", "OpenTelemetry", "machine learning", "AI analytics"],
-  authors: [{ name: "Lumina Team" }],
+  title: "Lumina - OpenTelemetry-Native AI Observability",
+  description: "The first OpenTelemetry-native observability platform for production AI systems. Get real-time traces, cost anomaly detection, and semantic regression testing—built for backend engineers.",
+  keywords: ["OpenTelemetry", "AI observability", "LLM monitoring", "AI tracing", "cost tracking", "semantic testing", "production AI", "backend engineering"],
+  authors: [{ name: "Lumina" }],
   openGraph: {
-    title: "Lumina - Lightweight Observability for LLM Applications",
-    description: "Track costs, latency, and quality across your AI systems with minimal overhead.",
+    title: "Lumina - OpenTelemetry-Native AI Observability",
+    description: "Stop debugging AI failures with grep and jq. Built for backend engineers who demand reliability.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lumina - Lightweight Observability for LLM Applications",
-    description: "Track costs, latency, and quality across your AI systems with minimal overhead.",
+    title: "Lumina - OpenTelemetry-Native AI Observability",
+    description: "Stop debugging AI failures with grep and jq. Built for backend engineers who demand reliability.",
   },
 };
 
