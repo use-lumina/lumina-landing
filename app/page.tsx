@@ -82,7 +82,7 @@ export default function Home() {
             Stop Debugging AI Failures<br />with grep and jq
           </h1>
           <p className="text-2xl text-[#888] mb-12 font-normal animate-[fadeInUp_0.8s_ease-out_forwards]">
-            OpenTelemetry-native observability platform for production AI system.
+            OpenTelemetry-native observability platform for production AI systems.
           </p>
           <p className="text-xl text-[#b0b0b0] max-w-175 mx-auto mb-12 animate-[fadeInUp_0.8s_ease-out_forwards]">
             Treat LLMs like the unreliable microservices they are. Get real-time traces, cost anomaly detection, and semantic regression testing—built for backend engineers, not data scientists.
