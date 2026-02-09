@@ -5,21 +5,21 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote: "Lumina cut our MTTD from 4 hours to under 30 seconds. We can finally debug AI failures with the same confidence as microservices.",
-      author: "Sarah Chen",
+      author: "Sarah Doe",
       role: "Staff SRE",
       company: "FinanceAI",
       avatar: "SC"
     },
     {
       quote: "The cost + quality correlation query is a game-changer. We identified a prompt that was both expensive AND low-quality in minutes.",
-      author: "Marcus Johnson",
+      author: "Joh Doe",
       role: "Principal Engineer",
       company: "DevTools Co",
       avatar: "MJ"
     },
     {
       quote: "Being OTEL-native means we didn't rip out our existing stack. Lumina just plugged in. Zero friction adoption.",
-      author: "Priya Patel",
+      author: "Priya Doe",
       role: "VP Engineering",
       company: "ChatScale",
       avatar: "PP"

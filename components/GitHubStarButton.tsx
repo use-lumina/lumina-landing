@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FaStar, FaGithub } from 'react-icons/fa'; // Assuming react-icons is installed or will be installed
+import { FaGithub } from 'react-icons/fa'; // Assuming react-icons is installed or will be installed
 
 export default function GitHubStarButton() {
   const [stars, setStars] = useState<number | null>(null);
