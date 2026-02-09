@@ -37,7 +37,12 @@ export default function Hero() {
             </svg>
           </Button>
           <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            View Documentation
+            <a
+              href="https://docs.uselumina.io"
+              className="text-gray-300 hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View Documentation</a>
           </Button>
         </div>
 
