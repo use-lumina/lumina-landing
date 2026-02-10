@@ -1,0 +1,32 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="luminaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B3FE4"/>
+      <stop offset="100%" stop-color="#2BB3FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Aperture Icon -->
+  <g transform="translate(200,200)">
+    <circle r="90" fill="url(#luminaGrad)" opacity="0.15"/>
+    <g fill="url(#luminaGrad)">
+      <path d="M0,-90 A90,90 0 0,1 78,-45 L20,-35 Z"/>
+      <path d="M78,-45 A90,90 0 0,1 78,45 L35,20 Z"/>
+      <path d="M78,45 A90,90 0 0,1 0,90 L-20,35 Z"/>
+      <path d="M0,90 A90,90 0 0,1 -78,45 L-35,20 Z"/>
+      <path d="M-78,45 A90,90 0 0,1 -78,-45 L-35,-20 Z"/>
+      <path d="M-78,-45 A90,90 0 0,1 0,-90 L-20,-35 Z"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="380" y="240"
+        font-size="140"
+        font-weight="600"
+        font-family="Inter, system-ui, Arial"
+        fill="url(#luminaGrad)">
+    Lumina
+  </text>
+
+</svg>

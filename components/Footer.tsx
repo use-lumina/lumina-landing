@@ -1,5 +1,6 @@
 import Container from './ui/Container'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const footerLinks = {
@@ -52,9 +53,16 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo + description */}
           <div className="col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-linear-to-br from-primary-500 to-accent-500 rounded-lg" />
-              <span className="text-xl font-bold text-gradient">Lumina</span>
+            <div className="flex items-center mb-2">
+              {/* <div className="w-8 h-8 bg-linear-to-br from-primary-500 to-accent-500 rounded-lg" /> */}
+              {/* <span className="text-xl font-bold text-gradient">Lumina</span> */}
+              <Image
+                src="/Lumina-full-logo.svg"
+                alt="Lumina Logo"
+                width={200}
+                height={200}
+                className="rounded-lg"
+              />
             </div>
             <p className="text-gray-400 text-sm max-w-xs mb-4">
               OpenTelemetry-native observability for production AI systems.

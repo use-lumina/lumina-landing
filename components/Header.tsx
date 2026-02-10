@@ -25,7 +25,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/Lumina-logo.png"
+              src="/Lumina-full-logo.svg"
               alt="Lumina Logo"
               width={200}
               height={200}
