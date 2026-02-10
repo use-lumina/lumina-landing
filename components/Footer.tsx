@@ -57,7 +57,7 @@ export default function Footer() {
               {/* <div className="w-8 h-8 bg-linear-to-br from-primary-500 to-accent-500 rounded-lg" /> */}
               {/* <span className="text-xl font-bold text-gradient">Lumina</span> */}
               <Image
-                src="/Lumina-full-logo.svg"
+                src="/lumina-full-logo.svg"
                 alt="Lumina Logo"
                 width={200}
                 height={200}
