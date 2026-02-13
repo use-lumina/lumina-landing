@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Container from './ui/Container'
+import { useState } from 'react';
+import Container from './ui/Container';
 
 export default function CodeDemo() {
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState(0);
 
   const examples = [
     {
@@ -24,7 +24,7 @@ const response = await lumina.trace(
       messages: messages,
     });
   }
-);`
+);`,
     },
     {
       title: 'Query',
@@ -39,7 +39,7 @@ const issues = await lumina.query(\`
   LIMIT 100
 \`);
 
-// This query is impossible in other tools`
+// This query is impossible in other tools`,
     },
     {
       title: 'Alert',
@@ -54,18 +54,16 @@ lumina.alert({
   severity: 'critical'
 });
 
-// Sub-500ms detection`
-    }
-  ]
+// Sub-500ms detection`,
+    },
+  ];
 
   return (
     <section className="py-20 bg-gray-900/30">
       <Container>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              One SDK. Complete Visibility.
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">One SDK. Complete Visibility.</h2>
             <p className="text-xl text-gray-400">
               Drop-in instrumentation that works with your existing stack
             </p>
@@ -80,10 +78,7 @@ lumina.alert({
                   onClick={() => setActiveTab(i)}
                   className={`
                     px-6 py-3 text-sm font-medium transition-colors relative
-                    ${activeTab === i
-                      ? 'text-primary-400'
-                      : 'text-gray-400 hover:text-gray-300'
-                    }
+                    ${activeTab === i ? 'text-primary-400' : 'text-gray-400 hover:text-gray-300'}
                   `}
                 >
                   {example.title}
@@ -104,5 +99,5 @@ lumina.alert({
         </div>
       </Container>
     </section>
-  )
+  );
 }

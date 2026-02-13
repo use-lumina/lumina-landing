@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -37,7 +37,11 @@ export default function GitHubStarButton() {
     >
       <FaGithub className="w-4 h-4" />
       <span>Star</span>
-      {stars > 0 && <span className="ml-1 px-2 py-0.5 bg-gray-700 rounded-full text-xs text-white">{stars}</span>}
+      {stars > 0 && (
+        <span className="ml-1 px-2 py-0.5 bg-gray-700 rounded-full text-xs text-white">
+          {stars}
+        </span>
+      )}
     </Link>
   );
 }

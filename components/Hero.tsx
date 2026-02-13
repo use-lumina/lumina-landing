@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Container from './ui/Container'
-import Button from './ui/Button'
+import Container from './ui/Container';
+import Button from './ui/Button';
 
 export default function Hero() {
   return (
@@ -33,7 +33,12 @@ export default function Hero() {
           <Button size="lg" className="w-full sm:w-auto">
             Start Free Trial
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
             </svg>
           </Button>
           <Button variant="outline" size="lg" className="w-full sm:w-auto">
@@ -42,7 +47,9 @@ export default function Hero() {
               className="text-gray-300 hover:text-white transition-colors"
               target="_blank"
               rel="noopener noreferrer"
-            >View Documentation</a>
+            >
+              View Documentation
+            </a>
           </Button>
         </div>
 
@@ -62,5 +69,5 @@ export default function Hero() {
         </div>
       </Container>
     </section>
-  )
+  );
 }

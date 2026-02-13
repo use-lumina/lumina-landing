@@ -1,4 +1,4 @@
-import Container from './ui/Container'
+import Container from './ui/Container';
 
 // Pre-calculate random heights once
 const chartHeights = Array.from({ length: 24 }).map(() => Math.random() * 100);
@@ -8,9 +8,7 @@ export default function ProductShowcase() {
     <section className="py-20 bg-gray-900/30">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            See What You&apos;ve Been Missing
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">See What You&apos;ve Been Missing</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Real-time visibility into every layer of your AI stack
           </p>
@@ -47,7 +45,9 @@ export default function ProductShowcase() {
                   <div key={i} className="bg-gray-900 border border-gray-800 rounded-lg p-4">
                     <div className="text-sm text-gray-400 mb-1">{stat.label}</div>
                     <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-                    <div className={`text-xs ${stat.trend === 'up' ? 'text-green-400' : 'text-red-400'}`}>
+                    <div
+                      className={`text-xs ${stat.trend === 'up' ? 'text-green-400' : 'text-red-400'}`}
+                    >
                       {stat.change}
                     </div>
                   </div>
@@ -59,15 +59,22 @@ export default function ProductShowcase() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-semibold">Cost & Quality Correlation</h3>
                   <div className="flex space-x-2">
-                    <button className="px-3 py-1 bg-primary-500/10 text-primary-400 rounded text-sm">24h</button>
-                    <button className="px-3 py-1 text-gray-400 hover:text-white rounded text-sm">7d</button>
-                    <button className="px-3 py-1 text-gray-400 hover:text-white rounded text-sm">30d</button>
+                    <button className="px-3 py-1 bg-primary-500/10 text-primary-400 rounded text-sm">
+                      24h
+                    </button>
+                    <button className="px-3 py-1 text-gray-400 hover:text-white rounded text-sm">
+                      7d
+                    </button>
+                    <button className="px-3 py-1 text-gray-400 hover:text-white rounded text-sm">
+                      30d
+                    </button>
                   </div>
                 </div>
 
                 {/* Simple chart representation */}
                 <div className="h-48 flex items-end justify-between space-x-2">
-                  {chartHeights.map((height, i) => { // Use pre-calculated heights
+                  {chartHeights.map((height, i) => {
+                    // Use pre-calculated heights
                     const isAnomaly = height > 80;
                     return (
                       <div key={i} className="flex-1 flex flex-col justify-end">
@@ -88,19 +95,44 @@ export default function ProductShowcase() {
                 </div>
                 <div className="divide-y divide-gray-800">
                   {[
-                    { endpoint: '/api/chat', status: 'success', latency: '1.2s', cost: '$0.45', quality: 0.92 },
-                    { endpoint: '/api/search', status: 'success', latency: '0.8s', cost: '$0.12', quality: 0.88 },
-                    { endpoint: '/api/chat', status: 'warning', latency: '2.4s', cost: '$0.89', quality: 0.71 },
+                    {
+                      endpoint: '/api/chat',
+                      status: 'success',
+                      latency: '1.2s',
+                      cost: '$0.45',
+                      quality: 0.92,
+                    },
+                    {
+                      endpoint: '/api/search',
+                      status: 'success',
+                      latency: '0.8s',
+                      cost: '$0.12',
+                      quality: 0.88,
+                    },
+                    {
+                      endpoint: '/api/chat',
+                      status: 'warning',
+                      latency: '2.4s',
+                      cost: '$0.89',
+                      quality: 0.71,
+                    },
                   ].map((trace, i) => (
-                    <div key={i} className="px-4 py-3 hover:bg-gray-800/50 cursor-pointer flex items-center justify-between">
+                    <div
+                      key={i}
+                      className="px-4 py-3 hover:bg-gray-800/50 cursor-pointer flex items-center justify-between"
+                    >
                       <div className="flex items-center space-x-4 flex-1">
-                        <div className={`w-2 h-2 rounded-full ${trace.status === 'success' ? 'bg-green-500' : 'bg-yellow-500'}`} />
+                        <div
+                          className={`w-2 h-2 rounded-full ${trace.status === 'success' ? 'bg-green-500' : 'bg-yellow-500'}`}
+                        />
                         <span className="font-mono text-sm text-gray-300">{trace.endpoint}</span>
                       </div>
                       <div className="flex items-center space-x-6 text-sm">
                         <span className="text-gray-400">{trace.latency}</span>
                         <span className="text-gray-400">{trace.cost}</span>
-                        <span className={trace.quality > 0.8 ? 'text-green-400' : 'text-yellow-400'}>
+                        <span
+                          className={trace.quality > 0.8 ? 'text-green-400' : 'text-yellow-400'}
+                        >
                           {trace.quality.toFixed(2)}
                         </span>
                       </div>
@@ -113,5 +145,5 @@ export default function ProductShowcase() {
         </div>
       </Container>
     </section>
-  )
+  );
 }

@@ -1,27 +1,29 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import Container from './ui/Container'
-import Button from './ui/Button'
-import GitHubStarButton from './GitHubStarButton'
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Container from './ui/Container';
+import Button from './ui/Button';
+import GitHubStarButton from './GitHubStarButton';
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 10)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className={`
+    <header
+      className={`
       fixed top-0 left-0 right-0 z-50 transition-all duration-300 pt-1
       ${isScrolled ? 'bg-gray-950/80 backdrop-blur-xl border-b border-gray-800' : 'bg-transparent'}
-    `}>
+    `}
+    >
       <Container>
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-2">
@@ -53,17 +55,14 @@ export default function Header() {
             </a>
           </nav>
 
-          <div className="flex items-center space-x-4 lg:hidden"> {/* Show on mobile and tablet, hide on lg and up */}
+          <div className="flex items-center space-x-4 lg:hidden">
+            {' '}
+            {/* Show on mobile and tablet, hide on lg and up */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-300 hover:text-white focus:outline-none"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -74,27 +73,39 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-4"> {/* Hide on mobile and tablet, show on lg and up */}
+          <div className="hidden lg:flex items-center space-x-4">
+            {' '}
+            {/* Hide on mobile and tablet, show on lg and up */}
             <GitHubStarButton />
             <Button variant="outline" size="sm">
               Sign In
             </Button>
-            <Button size="sm">
-              Get Started
-            </Button>
+            <Button size="sm">Get Started</Button>
           </div>
         </div>
       </Container>
       {isMenuOpen && (
         <div className="lg:hidden bg-gray-950/90 backdrop-blur-xl border-b border-gray-800 py-4">
           <nav className="flex flex-col items-center space-y-4">
-            <Link href="#features" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="#features"
+              className="text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Features
             </Link>
-            <Link href="#use-cases" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="#use-cases"
+              className="text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Use Cases
             </Link>
-            <Link href="#pricing" className="text-gray-300 hover:text-white transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="#pricing"
+              className="text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Pricing
             </Link>
             <a
@@ -118,5 +129,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

@@ -1,38 +1,39 @@
-import Container from './ui/Container'
-import Card from './ui/Card'
+import Container from './ui/Container';
+import Card from './ui/Card';
 
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Lumina cut our MTTD from 4 hours to under 30 seconds. We can finally debug AI failures with the same confidence as microservices.",
-      author: "Sarah Doe",
-      role: "Staff SRE",
-      company: "FinanceAI",
-      avatar: "SC"
+      quote:
+        'Lumina cut our MTTD from 4 hours to under 30 seconds. We can finally debug AI failures with the same confidence as microservices.',
+      author: 'Sarah Doe',
+      role: 'Staff SRE',
+      company: 'FinanceAI',
+      avatar: 'SC',
     },
     {
-      quote: "The cost + quality correlation query is a game-changer. We identified a prompt that was both expensive AND low-quality in minutes.",
-      author: "Joh Doe",
-      role: "Principal Engineer",
-      company: "DevTools Co",
-      avatar: "MJ"
+      quote:
+        'The cost + quality correlation query is a game-changer. We identified a prompt that was both expensive AND low-quality in minutes.',
+      author: 'Joh Doe',
+      role: 'Principal Engineer',
+      company: 'DevTools Co',
+      avatar: 'MJ',
     },
     {
-      quote: "Being OTEL-native means we didn't rip out our existing stack. Lumina just plugged in. Zero friction adoption.",
-      author: "Priya Doe",
-      role: "VP Engineering",
-      company: "ChatScale",
-      avatar: "PP"
-    }
-  ]
+      quote:
+        "Being OTEL-native means we didn't rip out our existing stack. Lumina just plugged in. Zero friction adoption.",
+      author: 'Priya Doe',
+      role: 'VP Engineering',
+      company: 'ChatScale',
+      avatar: 'PP',
+    },
+  ];
 
   return (
     <section className="py-20">
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Trusted by Engineering Teams
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Trusted by Engineering Teams</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Backend engineers shipping AI products rely on Lumina for production reliability
           </p>
@@ -42,7 +43,11 @@ export default function Testimonials() {
           {testimonials.map((testimonial, i) => (
             <Card key={i} hover={false} className="flex flex-col">
               <div className="mb-6 flex-1">
-                <svg className="w-8 h-8 text-primary-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-8 h-8 text-primary-500 mb-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
                 <p className="text-gray-300 leading-relaxed">&quot;{testimonial.quote}&quot;</p>
@@ -54,7 +59,9 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <div className="font-semibold">{testimonial.author}</div>
-                  <div className="text-sm text-gray-400">{testimonial.role} at {testimonial.company}</div>
+                  <div className="text-sm text-gray-400">
+                    {testimonial.role} at {testimonial.company}
+                  </div>
                 </div>
               </div>
             </Card>
@@ -76,5 +83,5 @@ export default function Testimonials() {
         </div>
       </Container>
     </section>
-  )
+  );
 }
