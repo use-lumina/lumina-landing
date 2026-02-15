@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script'
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -47,6 +48,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         {children}
+        <Script
+          id="apollo-tracker"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function initApollo(){
+                var n=Math.random().toString(36).substring(7),
+                o=document.createElement("script");
+                o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,
+                o.async=!0,
+                o.defer=!0,
+                o.onload=function(){
+                  window.trackingFunctions.onLoad({appId:"69920b5e16b7ed00159eea02"})
+                },
+                document.head.appendChild(o)
+              }
+              initApollo();
+            `
+          }}
+        />
       </body>
     </html>
   );
