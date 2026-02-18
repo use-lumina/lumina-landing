@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto pt-12 border-t border-gray-800">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto pt-12 border-t border-gray-800">
           {[
             { value: '<500ms', label: 'Alert Latency' },
             { value: '10M+', label: 'Calls/Day' },
@@ -66,7 +66,7 @@ export default function Hero() {
               <div className="text-sm text-gray-400">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </Container>
     </section>
   );

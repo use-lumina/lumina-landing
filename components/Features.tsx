@@ -4,41 +4,7 @@ import Card from './ui/Card';
 export default function Features() {
   const features = [
     {
-      number: '01',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          />
-        </svg>
-      ),
-      title: 'OpenTelemetry-Native',
-      description:
-        'Built on OTEL standard. Zero vendor lock-in. Send traces to Lumina, Datadog, and Grafana simultaneously.',
-      highlight: 'Works with your existing stack',
-    },
-    {
-      number: '02',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-          />
-        </svg>
-      ),
-      title: 'End-to-End RAG Visibility',
-      description:
-        'Trace the entire pipeline from user request through embedding, vector DB, reranking, to LLM generation.',
-      highlight: 'Root cause in 30 seconds',
-    },
-    {
-      number: '03',
+      number: '01', // Moved to top and re-numbered
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -55,7 +21,41 @@ export default function Features() {
       highlight: 'Impossible in other tools',
     },
     {
-      number: '04',
+      number: '02', // Re-numbered
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      ),
+      title: 'OpenTelemetry-Native',
+      description:
+        'Built on OTEL standard. Zero vendor lock-in. Send traces to Lumina, Datadog, and Grafana simultaneously.',
+      highlight: 'Works with your existing stack',
+    },
+    {
+      number: '03', // Re-numbered
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          />
+        </svg>
+      ),
+      title: 'End-to-End RAG Visibility',
+      description:
+        'Trace the entire pipeline from user request through embedding, vector DB, reranking, to LLM generation.',
+      highlight: 'Root cause in 30 seconds',
+    },
+    {
+      number: '04', // Re-numbered
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -72,7 +72,7 @@ export default function Features() {
       highlight: 'Quality gates prevent regressions',
     },
     {
-      number: '05',
+      number: '05', // Re-numbered
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
@@ -89,7 +89,7 @@ export default function Features() {
       highlight: 'Sub-500ms detection',
     },
     {
-      number: '06',
+      number: '06', // Re-numbered
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path

@@ -20,7 +20,7 @@ export default function Footer() {
       { name: 'Guides', href: '/guides' },
       { name: 'API Reference', href: '/api' },
       { name: 'Community', href: '/community' },
-      { name: 'Status', href: 'https://status.uselumina.io' },
+      { name: 'Status', href: '/status' },
     ],
     Legal: [
       { name: 'Privacy', href: '/privacy' },
@@ -37,12 +37,12 @@ export default function Footer() {
     },
     {
       name: 'twitter',
-      href: 'https://twitter.com/uselumina',
+      href: 'https://twitter.com/#uselumina',
       path: 'M18.244 2.25h.466l-5.606 6.065L20.244 22H14.85l-4.704-5.078L6.44 22H2.954l5.242-5.698L2.25 2.25h5.484l3.867 4.19L18.244 2.25Zm-4.04 16.143L6.035 4.31H4.684l7.65 8.32L19.317 20h-1.378l-4.704-5.077ZM14.04 22L6.035 4.31H4.684L12.334 12.63L19.317 20h-1.378L14.04 22Z',
     },
     {
       name: 'linkedin',
-      href: 'https://www.linkedin.com/company/uselumina',
+      href: 'https://www.linkedin.com/company/#uselumina',
       path: 'M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V10.66C13.6,9.73 14.86,9 16.2,9C19.1,9 20,10.91 20,13.57V21H21V21M7,21H3V9H7V21M5,3C3.89,3 3,3.89 3,5C3,6.11 3.89,7 5,7C6.11,7 7,6.11 7,5C7,3.89 6.11,3 5,3Z',
     },
   ];
