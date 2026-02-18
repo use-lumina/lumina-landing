@@ -42,7 +42,7 @@ export default function Footer() {
     },
     {
       name: 'linkedin',
-      href: 'https://www.linkedin.com/company/#uselumina',
+      href: 'https://www.linkedin.com/company/use-lumina',
       path: 'M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V10.66C13.6,9.73 14.86,9 16.2,9C19.1,9 20,10.91 20,13.57V21H21V21M7,21H3V9H7V21M5,3C3.89,3 3,3.89 3,5C3,6.11 3.89,7 5,7C6.11,7 7,6.11 7,5C7,3.89 6.11,3 5,3Z',
     },
   ];
